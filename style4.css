@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'coolvetica';
+    src: url('fonts/Coolvetica Rg.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'schoolbell';
+    src: url('fonts/Schoolbell-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'creatodisplay';
+    src: url('fonts/CreatoDisplay-Regular.otf') format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("img/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 23px 24px;
+    font-family: 'coolvetica', sans-serif;
+    font-size: larger;
+}
+
+.navbar li a:hover {
+    background-color: #1d1d1d;
+}
+
+.div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 700px;
+    padding: 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 435px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo{
+  font-family: 'schoolbell';
+  font-size: 60px;
+  position: absolute;
+  top: 10px;
+  margin: 5px;
+  left: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#div{
+  position: absolute;
+  height: 450px;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  padding: 15px;
+  background-color: #3a7bd5;
+  border-radius: 15px;
+  font-family: 'creatodisplay';
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}

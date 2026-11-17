@@ -1,0 +1,222 @@
+@font-face { font-family: 'coolvetica'; src: url('fonts/Coolvetica Rg.otf') format('opentype'); }
+@font-face { font-family: 'schoolbell'; src: url('fonts/Schoolbell-Regular.ttf') format('opentype'); }
+@font-face { font-family: 'creatodisplay'; src: url('fonts/CreatoDisplay-Regular.otf') format('opentype'); }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("img/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #000000;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 23px 24px;
+    font-family: 'coolvetica', sans-serif;
+    font-size: larger;
+}
+
+.navbar li a:hover {
+    background-color: #1d1d1d;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+.caixa_texto1 {
+    background-color: white;
+    position: relative;
+    height: 600px;
+    width: 50%;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.caixa_texto2 {
+    background-color: white;
+    position: relative;
+    height: 600px;
+    width: 50%;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.icone1 {
+    position: absolute;
+    top: -40px;
+    width: auto;
+    height: 30%;
+    margin: 5px;
+    left: -120px;
+}
+
+.icone2 {
+    position: absolute;
+    top: -40px;
+    width: auto;
+    height: 28%;
+    margin: 5px;
+    left: -100px;
+}
+
+.titulo1 {
+    font-family: 'schoolbell';
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    margin: 5px;
+    left: 80px;
+    color: rgb(0, 0, 0);
+}
+
+.titulo2 {
+    font-family: 'schoolbell';
+    font-size: 60px;
+    position: absolute;
+    top: 10px;
+    margin: 5px;
+    left: 105px;
+    color: rgb(0, 0, 0);
+}
+
+.texto1 {
+    font-family: 'creatodisplay';
+    font-size: 23px;
+    position: absolute;
+    top: 100px;
+    margin: 5px;
+    left: 10px;
+    right: 10px;
+}
+
+.glossario {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+    padding: 15px;
+    background-color: #3a7bd5;
+    border-radius: 15px;
+    font-family: 'creatodisplay';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.texto2 {
+    font-family: 'creatodisplay';
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    margin: 5px;
+    left: 10px;
+    right: 10px;
+}
+
+.tabela1 {
+    font-family: 'creatodisplay';
+    font-size: 15px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.tabela1 th, .tabela1 td {
+    border: 1px solid #000000;
+    padding: 5px;
+    text-align: left;
+}
+
+.coluna {
+    background-color: #9c7ad4;
+}
+
+.tabela2 {
+    font-family: 'creatodisplay';
+    font-size: 15px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+}
+
+.tabela2 th, .tabela2 td {
+    border: 1px solid #000000;
+    padding: 5px;
+    text-align: left;
+}
+
+@media (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .caixa_texto1, .caixa_texto2 {
+        width: 100%;
+        max-width: 650px;
+        margin: 30px auto;
+    }
+
+    .icone1 {
+        left: -60px;
+    }
+
+    .icone2 {
+        left: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        text-align: center;
+    }
+
+    .navbar li a {
+        padding: 15px 12px;
+        font-size: medium;
+    }
+
+    .icone1, .icone2 {
+        height: 22%;
+        left: -20px;
+        top: -30px;
+    }
+}
